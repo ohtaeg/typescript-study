@@ -12,7 +12,7 @@ function print(params) {
     console.log((_a = params.city) !== null && _a !== void 0 ? _a : "default city is incheon");
 }
 print(man);
-const man2 = {
+const men = {
     name: "ohtaeg",
     age: 32
 };
@@ -20,8 +20,8 @@ function print2(params) {
     var _a;
     console.log((_a = params.city) !== null && _a !== void 0 ? _a : "default city is incheon");
 }
-print2(man2);
-// 익명 함수
+print2(men);
+// 익명 인터페이스, 세미콜론으로 해야함!
 const man3 = {
     name: "ohtaeg",
     age: 32
