@@ -18,7 +18,7 @@ console.log(loginDto2);
 // loginDto.id = "hi"; 에러남, setter 선언시에도 에러남
 // 위 LoginData를 다르게 표현하면 아래와 같다.
 class LoginData2 {
-    constructor(_id, _password) {
+    constructor(_id, _password = "default value") {
         this._id = _id;
         this._password = _password;
     }

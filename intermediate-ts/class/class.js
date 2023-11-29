@@ -21,6 +21,7 @@ class UserInfo {
         this._phone = phone;
     }
 }
+// 타입 선언과 동시에 UserInfo 인스턴스 할당 가능
 const user = new UserInfo("태경", 1, "seoul", "01011112222");
 user.city = "i-town"; // setter가 호출된다.
 console.log(user.city); // getter가 호출된다.
