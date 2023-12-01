@@ -38,8 +38,8 @@ $ ts-node basic.ts/typenode.ts
 ## install ts-node
 ```
 // -D : develop flag, 빌드시 배포본에는 포함되지 않는다.
-// @types/node => 노드에 타입을 다 넣어주는 패키지, node에 사용되는 TypeScript의 타입 정의를 가져오는 것입니다.
-// ex. @types/axios  => axios 패키지에 type을 달아준다
+// @types/node => 기존 noe.js에 타입을 다 넣어주는 패키지, node에 사용되는 TypeScript의 타입 정의를 가져오는 것입니다.
+// ex. @types/axios  => axios 패키지에 type을 다 달아준다
 $ npm install -D @types/node
 
 $ npm install -D @tsconfig/node16

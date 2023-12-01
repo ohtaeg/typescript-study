@@ -112,12 +112,12 @@
   // 어떤 타입 스크립트 파일을 자바스크립트로 변환하지 않을 것인가?
   // node modules 패키지 내 파일들
   "exclude": ["node_modules"],
-  "extends": "@tsconfig/node16/tsconfig.json",
+  "extends": "./node_modules/@tsconfig/node16/tsconfig.json",
   "ts-node": {
     "compilerOptions": {
       "target": "ES6",
       "module": "commonJS",
-      "moduleResolution": "node"
+      "lib" : ["DOM"]
     }
   }
 }
