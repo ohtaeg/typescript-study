@@ -47,6 +47,7 @@ function UseGuard() {
     };
 }
 let HelloController = class HelloController {
+    _email;
     constructor(email) {
         this._email = email;
     }

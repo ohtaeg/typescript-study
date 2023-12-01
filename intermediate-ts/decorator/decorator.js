@@ -29,6 +29,7 @@ function Controller(constructor) {
  * @Get @Post는 메서드 데코레이터로 런타임에 실행
  */
 let ExampleClass = class ExampleClass {
+    _email;
     constructor(email) {
         this._email = email;
     }

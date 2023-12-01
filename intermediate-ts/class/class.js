@@ -1,5 +1,9 @@
 "use strict";
 class UserInfo {
+    name; // default
+    age; // 자기 자신한테만 허용 + 자신을 상속받은 자식한테도 허용 가능
+    _city; // private인 경우 변수명 앞에 언더바를 붙이는 것인 관례
+    _phone;
     constructor(name, age, city, phone) {
         this.name = name;
         this.age = age;
