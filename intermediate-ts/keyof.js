@@ -7,10 +7,10 @@
  * 따라서 keyof 연산자를 이용하여 반환된 값은 문자열 리터럴 유니온 타입(string | number | ...) 이 되는데
  * key의 타입을 string으로 주면, params 객체에서 해당 문자열 키가 있는지 검사할 수 없기 때문에 컴파일러가 에러를 발생
  */
-function print(params, key) {
+function printer(params, key) {
     console.log(params[key]);
 }
-print({
+printer({
     title: "TS 배우기",
     publisher: "asdf",
     price: 5000,

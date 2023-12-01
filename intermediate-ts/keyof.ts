@@ -15,11 +15,11 @@ interface Book {
  * key의 타입을 string으로 주면, params 객체에서 해당 문자열 키가 있는지 검사할 수 없기 때문에 컴파일러가 에러를 발생
  */
 
-function print(params: Book, key: keyof Book) {
+function printer(params: Book, key: keyof Book) {
     console.log(params[key]);
 }
 
-print ({
+printer ({
     title : "TS 배우기",
     publisher : "asdf",
     price : 5000,

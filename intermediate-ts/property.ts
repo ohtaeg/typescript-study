@@ -12,7 +12,7 @@ interface City {
 }
 
 // 위와 같은 경우 인터페이스가 많아지면 그만큼 파라미터 타입도 늘어남
-function print(params: Name | School | City) {
+function prints(params: Name | School | City) {
     if ("name" in params) {}
     if ("school" in params) {}
     if ("city" in params) {}
@@ -23,7 +23,7 @@ interface key1 {
     [props: string]: string;
 }
 
-function print(params: key1) {
+function printss(params: key1) {
     if ("name" in params) {}
     if ("school" in params) {}
     if ("city" in params) {}

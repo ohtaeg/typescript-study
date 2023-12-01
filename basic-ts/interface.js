@@ -7,18 +7,16 @@ const man = {
     name: "ohtaeg",
     age: 32
 };
-function print(params) {
-    var _a;
-    console.log((_a = params.city) !== null && _a !== void 0 ? _a : "default city is incheon");
+function printt(params) {
+    console.log(params.city ?? "default city is incheon");
 }
-print(man);
+printt(man);
 const men = {
     name: "ohtaeg",
     age: 32
 };
 function print2(params) {
-    var _a;
-    console.log((_a = params.city) !== null && _a !== void 0 ? _a : "default city is incheon");
+    console.log(params.city ?? "default city is incheon");
 }
 print2(men);
 // 익명 인터페이스, 세미콜론으로 해야함!

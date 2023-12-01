@@ -8,11 +8,11 @@ const man = {
     age : 32
 };
 
-function print(params: any) {
+function printt(params: any) {
     console.log(params.city ?? "default city is incheon");
 }
 
-print(man);
+printt(man);
 
 
 
