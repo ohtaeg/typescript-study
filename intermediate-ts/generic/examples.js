@@ -1,4 +1,3 @@
-"use strict";
 /**
  * @param params
  * @param key
@@ -14,7 +13,6 @@ prtKey({ name: "zz", phone: "123123123" }, "name");
  * class에 제네릭
  */
 class Clazz {
-    _data;
     constructor(_data) {
         this._data = _data;
     }

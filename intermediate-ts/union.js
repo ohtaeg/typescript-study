@@ -1,4 +1,3 @@
-"use strict";
 // 합집합, 여러 타입을 지정해야하는 경우, | (or)
 let nameOrAge;
 nameOrAge = "ohtaeg";

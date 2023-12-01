@@ -1,4 +1,3 @@
-"use strict";
 // extends
 // 1. 타입 제한을 위해 사용, 아래 제네릭 함수에 대해서 첫번째 파라미터는 string 과 number로만 제한하고 싶을 때
 function add2(params, param2) {

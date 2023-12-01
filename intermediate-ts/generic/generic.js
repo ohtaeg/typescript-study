@@ -1,4 +1,3 @@
-"use strict";
 function print11(params) {
     console.log(params.data, params.arr);
 }

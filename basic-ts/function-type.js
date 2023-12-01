@@ -1,4 +1,3 @@
-"use strict";
 // 아래와 같이 반환값에도 타입 부여 가능
 function add(number1, number2) {
     return number1 + number2;

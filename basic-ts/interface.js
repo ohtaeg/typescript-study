@@ -1,4 +1,3 @@
-"use strict";
 /**
  * interface
  */
@@ -8,7 +7,8 @@ const man = {
     age: 32
 };
 function printt(params) {
-    console.log(params.city ?? "default city is incheon");
+    var _a;
+    console.log((_a = params.city) !== null && _a !== void 0 ? _a : "default city is incheon");
 }
 printt(man);
 const men = {
@@ -16,7 +16,8 @@ const men = {
     age: 32
 };
 function print2(params) {
-    console.log(params.city ?? "default city is incheon");
+    var _a;
+    console.log((_a = params.city) !== null && _a !== void 0 ? _a : "default city is incheon");
 }
 print2(men);
 // 익명 인터페이스, 세미콜론으로 해야함!

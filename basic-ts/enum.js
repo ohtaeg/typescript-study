@@ -1,4 +1,3 @@
-"use strict";
 var categories;
 (function (categories) {
     categories[categories["HOME"] = 0] = "HOME";

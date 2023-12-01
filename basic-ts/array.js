@@ -1,4 +1,3 @@
-"use strict";
 // 배열에 타입 부여
 const arr1 = [1, 2, 3];
 const arr2 = [1, 2, 3];

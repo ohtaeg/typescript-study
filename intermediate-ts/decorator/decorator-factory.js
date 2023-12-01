@@ -1,4 +1,3 @@
-"use strict";
 /**
  * f(g(x)) ---> f() { return g(x) }, g : 데코레이터 함수
  * g ---> f(g(x)), g를 감싸는 f : 데코레이터 팩토리라고 함
@@ -47,7 +46,6 @@ function UseGuard() {
     };
 }
 let HelloController = class HelloController {
-    _email;
     constructor(email) {
         this._email = email;
     }

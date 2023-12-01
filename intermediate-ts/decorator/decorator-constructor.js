@@ -1,4 +1,3 @@
-"use strict";
 // 데코레이터를 통해 생성자 조작
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -16,12 +15,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 function Controller2(constructor) {
     // 생성자의 데이터를 조작하려면 인자로 받고있는 생성자를 상속받은 클래스를 리턴해줘야한다.
     return class extends constructor {
-        _email = "change@asdf.com"; // 동일한 필드명의 값을 조작
-        _name = "zz"; // 없는 필드를 만들 수 있다.
+        constructor() {
+            super(...arguments);
+            this._email = "change@asdf.com"; // 동일한 필드명의 값을 조작
+            this._name = "zz"; // 없는 필드를 만들 수 있다.
+        }
     };
 }
 let TestClass = class TestClass {
-    _email;
     constructor(email) {
         this._email = email;
     }
