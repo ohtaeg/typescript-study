@@ -26,6 +26,25 @@ $ tsc
 $ tsc && node basic-ts/annotation.js
 ```
 
+## run 2
+```
+// ts-node 패키지 설치
+$ npm install -g ts-node
+
+// 타입스크립트 파일이 js로 변환되어 바로 실행된다. 이때 js 파일은 따로 실행되지 않는다.
+$ ts-node basic.ts/typenode.ts
+```
+
+## install ts-node
+```
+// -D : develop flag, 빌드시 배포본에는 포함되지 않는다.
+// @types/node => 노드에 타입을 다 넣어주는 패키지, node에 사용되는 TypeScript의 타입 정의를 가져오는 것입니다.
+// ex. @types/axios  => axios 패키지에 type을 달아준다
+$ npm install -D @types/node
+
+$ npm install -D @tsconfig/node16
+```
+
 ## tsconfig.json
 
 - "module" : "AMD"
