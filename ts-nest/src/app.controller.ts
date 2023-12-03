@@ -3,10 +3,24 @@ import { AppService } from './app.service';
 import { Body, Post } from '@nestjs/common';
 import { IUserInfo, UserInfo } from './types/user-type';
 import { UserInfoDto } from './dto/user-dto';
+import { UserEntity } from './entity/user.entity';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
+
+  @Get("something")
+  somethingLogicToUser(@Query() query) {
+    const payload = new UserEntity.Builder().$USER_ID(query.ID).build();
+
+    const result = this.appService.somethingLogicToUser(payload);
+
+    return new UserEntity.Builder()
+      .$USER_ID(result.USER_ID)
+      .$NAME(result.NAME)
+      .$ADR(result.ADR)
+      .build();
+  }
 
   @Get()
   getHello(@Query("id") id: number): string {
